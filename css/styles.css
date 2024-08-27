@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;0,900;1,400;1,700&display=swap');
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    background-color: cyan;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+
+.button-reset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+:root {
+    --primary-colour: #7223c7;
+    --bg-colour: #2f2f2f;
+    --black-v2: #252627;
+    --text: #fff;
+    --nav-colour: #1f1f1f;
+    --light-black-bg: #303233;
+    --secondary-colour: #11C9B3;
+    --primary-dark-colour: #252627;
+    --project-bg: #252627;
+    --secondary-active-colour: #E67240;
+}
+
+
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    color: white;
+    padding: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    transition: 0.3s background-color linear;
+}
+
+.test {
+    background-color: #1f1f1f;
+}
+
+.burger {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+header {
+    position: relative;
+    height: 100dvh;
+    background-color: #1c1c1c;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d0b0c' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    padding: 0.4rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.4rem 0;
+}
+
+header p {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.hero-name {
+    color: var(--secondary-colour);
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.hero-animation {
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+
+#animatedText::after {
+    content: "";
+    border-right: 3px solid var(--text);
+    padding-left: 5px;
+}
+
+.hero-button {
+    position: absolute;
+    cursor: pointer;
+    top: 65%;
+    left: 50%;
+    width: 40%;
+    transform: translate(-50%, -35%);
+    padding: 1rem;
+    background-color: var(--secondary-colour);
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: var(--secondary-active-colour);
+    color: var(--text);
+}
+
+
+
+
+
+
+
+.dark-mode-button {
+    background-color: var(--light-black-bg);
+    width: 50px;
+    height: 34px;
+    border-radius: 50px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    border: 2px solid var(--text);
+}
+
+.dark-mode-toggle {
+    background-color: var(--secondary-colour);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode-toggle img {
+    width: 50%;
+    height: 50%;
+}
+
+.toggle-light {
+    right: 0;
+}
+
+.toggle-dark {
+    left: 0;
+}
