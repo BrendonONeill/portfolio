@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +17,7 @@
         <div>
             <button class="button-reset burger"><img src="assets/menu.svg" alt="sidebar button"></button>
         </div>
-        <div class="logo"><img src="assets/webp/logo.webp" alt="" width="50" height="50"></div>
+        <div class="logo"><img src="assets/images/webp/logo.webp" alt="" width="50" height="50"></div>
         <div>
             <button class="dark-mode-button" aria-label="dark mode toggle">
                 <span class="dark-mode-toggle toggle-dark">
@@ -47,11 +47,11 @@
 
     </header>
     <main>
-        <section>
-            <h2>About me</h2>
+        <section class="section-light">
+            <h2 class="header h-dark">About me</h2>
             <div class="about-flex">
                 <div class="about-img">
-                    <img src="assets/webp/brendonnobg.webp" alt="">
+                    <img src="assets/images/webp/brendonnobg.webp" alt="">
                     <div class="about-me-img-backer"></div>
                 </div>
                 <div>
@@ -68,15 +68,23 @@
                     </div>
                 </div>
             </div>
+
+            <div class="divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 0 0 0 1200 0 1200 120z" class="shape-fill-0"></path>
+                </svg>
+            </div>
+
         </section>
-        <section>
-            <h2>Developer Skills</h2>
+        <section class="section-dark">
+            <h2 class="header h-light">Developer Skills</h2>
 
             <div class="skill-flex">
 
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/html.webp" alt="">
+                        <img width="50" src="assets/images/webp/html.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>HTML5</p>
@@ -84,7 +92,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/css.webp" alt="">
+                        <img width="50" src="assets/images/webp/css.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>CSS3</p>
@@ -92,7 +100,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/sass.webp" alt="">
+                        <img width="50" src="assets/images/webp/sass.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>SASS</p>
@@ -100,7 +108,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/js.webp" alt="">
+                        <img width="50" src="assets/images/webp/js.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>JavaScript</p>
@@ -108,7 +116,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/react.webp" alt="">
+                        <img width="50" src="assets/images/webp/react.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>React</p>
@@ -116,7 +124,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/ts.webp" alt="">
+                        <img width="50" src="assets/images/webp/ts.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>TypeScript</p>
@@ -124,7 +132,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/tailwind.webp" alt="">
+                        <img width="50" src="assets/images/webp/tailwind.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Tailwind</p>
@@ -132,7 +140,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/bootstrap-logo.svg" alt="">
+                        <img width="50" src="assets/images/webp/bootstrap-logo.svg" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Bootstrap</p>
@@ -140,7 +148,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/next.svg" alt="">
+                        <img width="50" src="assets/images/webp/next.svg" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Next.js</p>
@@ -148,7 +156,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/nodejs.webp" alt="">
+                        <img width="50" src="assets/images/webp/nodejs.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Node JS</p>
@@ -156,7 +164,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/expressjs-ar21.svg" alt="">
+                        <img width="50" src="assets/images/webp/expressjs-ar21.svg" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Express</p>
@@ -164,7 +172,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/mongodb.webp" alt="">
+                        <img width="50" src="assets/images/webp/mongodb.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Mongo DB</p>
@@ -172,7 +180,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/Sql_data_base_with_logo.png" alt="">
+                        <img width="50" src="assets/images/webp/Sql_data_base_with_logo.png" alt="">
                     </div>
                     <div class="skill-text">
                         <p>SQL</p>
@@ -180,7 +188,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/git.webp" alt="">
+                        <img width="50" src="assets/images/webp/git.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Git</p>
@@ -188,7 +196,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/npm.webp" alt="">
+                        <img width="50" src="assets/images/webp/npm.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>NPM</p>
@@ -196,7 +204,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/jest.svg" alt="">
+                        <img width="50" src="assets/images/webp/jest.svg" alt="">
                     </div>
                     <div class="skill-text">
                         <p>JEST</p>
@@ -204,7 +212,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/react.webp" alt="">
+                        <img width="50" src="assets/images/webp/react.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>React Native</p>
@@ -212,7 +220,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/Python.svg" alt="">
+                        <img width="50" src="assets/images/webp/Python.svg" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Python</p>
@@ -220,7 +228,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/Go.svg" alt="">
+                        <img width="50" src="assets/images/webp/Go.svg" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Golang</p>
@@ -228,12 +236,12 @@
                 </div>
 
             </div>
-            <h2>Design Skills</h2>
+            <h2 class="header h-light">Design Skills</h2>
             <div class="skill-flex">
 
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/photoshop.webp" alt="">
+                        <img width="50" src="assets/images/webp/photoshop.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>PhotoShop</p>
@@ -241,7 +249,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/ill.webp" alt="">
+                        <img width="50" src="assets/images/webp/ill.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Illustrator</p>
@@ -249,7 +257,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/indesign.webp" alt="">
+                        <img width="50" src="assets/images/webp/indesign.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Indesign</p>
@@ -257,7 +265,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/prem.webp" alt="">
+                        <img width="50" src="assets/images/webp/prem.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Premiere Pro</p>
@@ -265,7 +273,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/a-photo.webp" alt="">
+                        <img width="50" src="assets/images/webp/a-photo.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Affinity Design</p>
@@ -273,7 +281,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/a-design.webp" alt="">
+                        <img width="50" src="assets/images/webp/a-design.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Affinity Design</p>
@@ -281,7 +289,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/canva.webp" alt="">
+                        <img width="50" src="assets/images/webp/canva.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Canva</p>
@@ -289,7 +297,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/figma.webp" alt="">
+                        <img width="50" src="assets/images/webp/figma.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Figma</p>
@@ -297,7 +305,7 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-card-img">
-                        <img width="50" src="assets/webp/gimp.webp" alt="">
+                        <img width="50" src="assets/images/webp/gimp.webp" alt="">
                     </div>
                     <div class="skill-text">
                         <p>Gimp</p>
@@ -305,20 +313,287 @@
                 </div>
 
             </div>
+
+            <div class="divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 0 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+
         </section>
-        <section>
-            <h2>projects</h2>
+        <section class="section-light">
+            <h2 class="header h-dark">Projects</h2>
+
+            <div class="flex-projects">
+                <div class="project-card">
+                    <div class="project-card-img-container">
+                        <img loading="lazy" width="313" height="161" sizes="(max-width: 320px) 100vw, 320px" srcset="
+                        assets/images/projects/bt.webp" alt="bug tracking app">
+                    </div>
+                    <div class="project-card-text-container">
+                        <p class="project-title">Bug Tracking App</p>
+                        <div class="project-card-text-container-tools">
+                            <p>Next.js</p>
+                            <p>JavaScript</p>
+                            <p>JWT</p>
+                            <p>Mongo DB</p>
+                            <p>Mongoose</p>
+                            <p>Bcrypt</p>
+                        </div>
+                    </div>
+                    <div class="project-card-button-container">
+                        <button>More information</button>
+                    </div>
+                </div>
+
+
+
+                <div class="project-card">
+                    <div class="project-card-img-container">
+                        <img loading="lazy" sizes="(max-width: 320px) 100vw, 320px" srcset="
+                            assets/images/projects/game_lj0dbm_c_scale,w_300.webp 300w,
+                            assets/images/projects/game_lj0dbm_c_scale,w_320.webp 320w"
+                            src="game_lj0dbm_c_scale,w_320.webp" alt="Gamer-Data website">
+                    </div>
+                    <div class="project-card-text-container">
+                        <p class="project-title">Gamer-Data</p>
+                        <div class="project-card-text-container-tools">
+                            <p>React</p>
+                            <p>JSX</p>
+                            <p>CSS3</p>
+                            <p>JavaScript</p>
+                            <p>Firebase</p>
+                            <p>TanStack Query</p>
+                        </div>
+                    </div>
+                    <div class="project-card-button-container">
+                        <button>More information</button>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-card-img-container kanji-img">
+                        <img loading="lazy" sizes="(max-width: 300px) 100vw, 300px" srcset="
+                        assets/images/projects/kanji_lthwvd_c_scale,w_300.webp 300w"
+                            src=" kanji_lthwvd_c_scale,w_300.webp" alt="Kanji App">
+                    </div>
+                    <div class="project-card-text-container">
+                        <p class="project-title">Kanji Study</p>
+                        <div class="project-card-text-container-tools">
+                            <p>React</p>
+                            <p>TypeScript</p>
+                            <p>TSX</p>
+                            <p>Tailwind</p>
+                            <p>JSON</p>
+                            <p>CSS3</p>
+                        </div>
+                    </div>
+                    <div class="project-card-button-container">
+                        <button>More information</button>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-card-img-container">
+                        <img loading="lazy" sizes="(max-width: 320px) 100vw, 320px" srcset="
+                        assets/images/projects/anime-card_n7io7x.webp 300w,
+                        assets/images/projects/anime-card_n7io7x-320.webp 320w" src="anime_dmlsee_c_scale,w_320.webp"
+                            alt="Anime-Data App">
+                    </div>
+                    <div class="project-card-text-container">
+                        <p class="project-title">Anime-Data</p>
+                        <div class="project-card-text-container-tools">
+                            <p>React</p>
+                            <p>JSX</p>
+                            <p>CSS3</p>
+                            <p>JavaScript</p>
+                            <p>Zustand</p>
+                            <p>TanStack Query</p>
+                        </div>
+                    </div>
+                    <div class="project-card-button-container">
+                        <button>More information</button>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-card-img-container">
+                        <img loading="lazy" sizes="(max-width: 320px) 100vw, 320px" srcset="
+                        assets/images/projects/anime-card_n7io7x.webp 300w,
+                        assets/images/projects/anime-card_n7io7x-320.webp 320w" src="anime_dmlsee_c_scale,w_320.webp"
+                            alt="Anime-Data App">
+                    </div>
+                    <div class="project-card-text-container">
+                        <p class="project-title">CSS-Helper</p>
+                        <div class="project-card-text-container-tools">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>JavaScript</p>
+                            <P>VITE</P>
+                        </div>
+
+                    </div>
+                    <div class="project-card-button-container">
+                        <button>More information</button>
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+                    <div class="project-card-img-container">
+                        <img loading="lazy" sizes="(max-width: 320px) 100vw, 320px" srcset="
+                        assets/images/projects/anime-card_n7io7x.webp 300w,
+                        assets/images/projects/anime-card_n7io7x-320.webp 320w" src="anime_dmlsee_c_scale,w_320.webp"
+                            alt="Anime-Data App">
+                    </div>
+                    <div class="project-card-text-container">
+                        <p class="project-title">Portfolio</p>
+                        <div class="project-card-text-container-tools">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>JavaScript</p>
+                            <P>VITE</P>
+                        </div>
+
+                    </div>
+                    <div class="project-card-button-container">
+                        <button>More information</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card-img-container">
+                        <img loading="lazy" sizes="(max-width: 320px) 100vw, 320px" srcset="
+                        assets/images/projects/ff7_izu1k7_c_scale,w_300.webp 300w,
+                        assets/images/projects/ff7_izu1k7_c_scale,w_320.webp 320w" src="ff7_izu1k7_c_scale,w_320.webp"
+                            alt="Final fantasy vii site">
+                    </div>
+                    <div class="project-card-text-container">
+                        <p class="project-title">FFVII Information</p>
+                        <div class="project-card-text-container-tools">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>Bootstrap</p>
+                            <p>JavaScript</p>
+                        </div>
+
+                    </div>
+                    <div class="project-card-button-container">
+                        <button>More information</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 0 0 0 1200 0 1200 120z" class="shape-fill-0"></path>
+                </svg>
+            </div>
+
         </section>
-        <section>
-            <h2>design</h2>
+        <section class="section-dark">
+            <h2 class="header h-light">Design</h2>
+            <div class="flex-text">
+                <div class="design-img">
+                    <img loading="lazy" sizes="(max-width: 320px) 100vw, 320px" srcset="
+                    assets/images/webp/design_m5y4do_c_scale,w_278.webp 278w,
+                    assets/images/webp/design_m5y4do_c_scale,w_320.webp 320w" src="design_m5y4do_c_scale,w_320.webp"
+                        alt="design">
+                </div>
+                <div class="design-text">
+                    <p>I have been working with design products like Adobe Creative Cloud for 7 years. Within those
+                        years I have learned how to manipulate images in Photoshop, Create designs in Illustrator,
+                        produce videos with Premiere Pro and many other media skills.</p>
+                    <p>For my Design Portfolio Gallery I have focused on my image manipulation and design skills, this
+                        is a collection of my recent work that will be updated with new pieces as they are created.</p>
+                </div>
+            </div>
+            <div class="design-button">
+                <button>Enter</button>
+            </div>
+
+            <div class="divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 0 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+
         </section>
-        <section>
-            <h2>hobbies</h2>
+        <section class="section-light">
+            <h2 class="header h-dark">hobbies</h2>
+
+            <div class="hobby-card">
+                <h3>Programming</h3>
+                <p>I enjoy developing small projects where I can acquire new methods and skills to help me become a more
+                    professional developer. When I come to a difficult section it helps me to improve my problem-solving
+                    skills and allows me to think outside the box.</p>
+            </div>
+
+            <div class="hobby-card">
+                <h3>Baking/Cooking</h3>
+                <p> take pleasure in finding new recipes to make and challenge myself to improve on each meal I serve
+                    up. When baking I love to add new ingredients to the recipes and to redesign it to people’s
+                    requests.</p>
+            </div>
+
+            <div class="hobby-card">
+                <h3>Language Study</h3>
+                <p>This is a recent hobby I have picked up over the pandemic as I wanted to keep my mind buzy so I
+                    picked up Japanese as a lot of my favourite media are Japanese. はじめまして,私はブレンダンです.</p>
+            </div>
+
+            <div class="hobby-card">
+                <h3>Drawing</h3>
+                <p>I find drawing is relaxing and helps when I am struggling with creative block, I research concepts I
+                    wouldn’t usually do and try out experiments to look at it from a different perspective.</p>
+            </div>
+
+            <div class="divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 0 0 0 1200 0 1200 120z" class="shape-fill-0"></path>
+                </svg>
+            </div>
+
         </section>
-        <section>
-            <h2>contact</h2>
+        <section class="section-dark">
+            <h2 class="header h-light">Contact</h2>
+            <div class="form-model" id="formmodel">
+                <p>Message sent</p>
+            </div>
+            <div class="form-card" id="form">
+                <form>
+                    <div class="form-sections">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" required="" class="form-control form-input" id="name" name="name">
+                    </div>
+                    <div class="form-sections">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" required="" class="form-control form-input" id="email" name="email">
+                    </div>
+                    <div class="form-sections">
+                        <label for="text" class="form-label">Message:</label>
+                        <textarea required="" class="form-control form-input" id="text" name="text" cols="30"
+                            rows="10"></textarea>
+                    </div>
+                    <div class="form-sections">
+                        <button type="submit" class="form-button" data-button="Green">Submit</button>
+                    </div>
+                </form>
+            </div>
+
         </section>
     </main>
+    <footer>
+        <p>brendon o'neill 2024</p>
+    </footer>
 
 
     <script src="js/main.js" async defer></script>
