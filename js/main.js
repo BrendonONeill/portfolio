@@ -13,7 +13,30 @@ const image = document.querySelector(".image-toggle");
 
 // navbar
 let navbar = document.querySelector(".nav")
+let navburger = document.querySelector(".burger")
+let sidebar = document.querySelector(".sidebar")
+let sidebarClose = document.querySelector(".sidebar-close")
+let sidebarLinks = document.querySelectorAll(".sidebar-links li")
 
+
+navburger.addEventListener("click", () => {
+  sidebar.style.transition = 'all 0.4s linear'
+  sidebar.style.left = 0
+})
+
+sidebarClose.addEventListener("click", () => {
+  sidebar.style.transition = 'all 0.4s linear'
+  sidebar.style.left = '-100%'
+})
+
+sidebarLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    setTimeout(() => {
+      sidebar.style.transition = 'all 0.4s linear'
+      sidebar.style.left = '-100%'
+    },1000)
+  })
+})
 
 document.addEventListener("scroll", () => {
     if(window.scrollY >= 100 && !navbar.classList.contains("test"))
