@@ -17,16 +17,25 @@ let navburger = document.querySelector(".burger")
 let sidebar = document.querySelector(".sidebar")
 let sidebarClose = document.querySelector(".sidebar-close")
 let sidebarLinks = document.querySelectorAll(".sidebar-links li")
+let sidebarBG = document.querySelector(".sidebar-bg")
 
 
 navburger.addEventListener("click", () => {
   sidebar.style.transition = 'all 0.4s linear'
   sidebar.style.left = 0
+  sidebarBG.classList.remove("display-bg")
 })
 
 sidebarClose.addEventListener("click", () => {
   sidebar.style.transition = 'all 0.4s linear'
   sidebar.style.left = '-100%'
+  sidebarBG.classList.add("display-bg")
+})
+
+sidebarBG.addEventListener("click", () => {
+  sidebar.style.transition = 'all 0.4s linear'
+  sidebar.style.left = '-100%'
+  sidebarBG.classList.add("display-bg")
 })
 
 sidebarLinks.forEach((link) => {
@@ -34,6 +43,7 @@ sidebarLinks.forEach((link) => {
     setTimeout(() => {
       sidebar.style.transition = 'all 0.4s linear'
       sidebar.style.left = '-100%'
+      sidebarBG.classList.add("display-bg")
     },1000)
   })
 })
