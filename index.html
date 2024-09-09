@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <title></title>
-    <meta name="description" content="">
+    <meta name="description" content=" Hi, My Name is Brendon O'Neill. I am Front-end developer and Graphic Designer, I'm passionate
+    about improving my development and design skills as well as teaching people about Web
+    Development / Programming.">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <title>Brendon O'Neill's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <nav class="nav">
-        <div>
+        <div class="nav-burger">
             <button class="button-reset burger"><img src="assets/menu.svg" alt="sidebar button"></button>
         </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a id="nav-contact" href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
         <div class="logo"><img src="assets/images/webp/logo.webp" alt="" width="50" height="50"></div>
-        <div>
+        <div class="nav-toggler">
             <button class="dark-mode-button" aria-label="dark mode toggle">
                 <span class="dark-mode-toggle toggle-dark">
                     <img class="image-toggle" src="assets/moon.svg" alt="dakrmode indicator" width="15" height="15">
@@ -34,6 +47,7 @@
             <ul class="sidebar-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#design">Design</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
@@ -41,6 +55,7 @@
             </ul>
         </div>
     </div>
+    <div class="sidebar-bg display-bg"></div>
     <header id="home">
 
         <div class="hero">
@@ -69,18 +84,17 @@
                     <img src="assets/images/webp/brendonnobg.webp" alt="">
                     <div class="about-me-img-backer"></div>
                 </div>
-                <div>
-                    <div class="about-text">
-                        <p>Hi, My Name is Brendon O'Neill. I am Front-end developer and Graphic Designer, I'm passionate
-                            about improving my development and design skills as well as teaching people about Web
-                            Development / Programming.</p>
-                        <p> My College Qualifications:</p>
-                        <ul>
-                            <li>Bachelor of Science (Honours) Creative Computing, First Class Honours</li>
-                            <li>Bachelor of Science Multimedia Applications Development, Merit Grade 1</li>
-                            <li>QQI LEVEL 5 Multimedia Production, Distinction</li>
-                        </ul>
-                    </div>
+
+                <div class="about-text">
+                    <p>Hi, My Name is Brendon O'Neill. I am Front-end developer and Graphic Designer, I'm passionate
+                        about improving my development and design skills as well as teaching people about Web
+                        Development / Programming.</p>
+                    <p> My College Qualifications:</p>
+                    <ul>
+                        <li>Bachelor of Science (Honours) Creative Computing, First Class Honours</li>
+                        <li>Bachelor of Science Multimedia Applications Development, Merit Grade 1</li>
+                        <li>QQI LEVEL 5 Multimedia Production, Distinction</li>
+                    </ul>
                 </div>
             </div>
 
@@ -252,7 +266,7 @@
 
             </div>
             <h2 class="header h-light">Design Skills</h2>
-            <div class="skill-flex">
+            <div class="skill-flex skill-b">
 
                 <div class="skill-card">
                     <div class="skill-card-img">
@@ -437,10 +451,8 @@
 
                 <div class="project-card">
                     <div class="project-card-img-container">
-                        <img loading="lazy" sizes="(max-width: 320px) 100vw, 320px" srcset="
-                        assets/images/projects/anime-card_n7io7x.webp 300w,
-                        assets/images/projects/anime-card_n7io7x-320.webp 320w" src="anime_dmlsee_c_scale,w_320.webp"
-                            alt="Anime-Data App">
+                        <img loading="lazy" sizes="(max-width: 320px) 100vw, 320px"
+                            src="/assets/images/webp/css-helper-project-small.webp" alt="Anime-Data App">
                     </div>
                     <div class="project-card-text-container">
                         <p class="project-title">CSS-Helper</p>
@@ -460,10 +472,8 @@
 
                 <div class="project-card">
                     <div class="project-card-img-container">
-                        <img loading="lazy" sizes="(max-width: 320px) 100vw, 320px" srcset="
-                        assets/images/projects/anime-card_n7io7x.webp 300w,
-                        assets/images/projects/anime-card_n7io7x-320.webp 320w" src="anime_dmlsee_c_scale,w_320.webp"
-                            alt="Anime-Data App">
+                        <img loading="lazy" sizes="(max-width: 320px) 100vw, 320px"
+                            src="/assets/images/webp/port-project-small.webp" alt="Anime-Data App">
                     </div>
                     <div class="project-card-text-container">
                         <p class="project-title">Portfolio</p>
@@ -635,23 +645,23 @@
     <footer>
         <div class="footer-projects">
             <ul>
-                <li>Bug Tracking App</li>
-                <li>Gamer-Data</li>
-                <li>Kanji Study</li>
-                <li>Anime-Data</li>
-                <li>CSS-Helper</li>
-                <li>Portfolio</li>
-                <li>FFVII Information</li>
+                <li><a href="">Bug Tracking App</a></li>
+                <li><a href="">Gamer-Data</a></li>
+                <li><a href="">Kanji Study</a></li>
+                <li><a href="">Anime-Data</a></li>
+                <li><a href="">CSS-Helper</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">FFVII Information</a></li>
             </ul>
         </div>
         <div class="footer-name">
-            <p>Brendon O'Neill </p>
+            <p>Brendon O'Neill 2024 </p>
         </div>
         <div class="footer-links">
             <ul>
-                <li>Github</li>
-                <li>LinkedIn</li>
-                <li>CV</li>
+                <li><a href="">GitHub <img src="/assets/images/github.svg" width="15" height="15" alt=""></a></li>
+                <li><a href="">LinkedIn <img src="/assets/images/linkedin.svg" alt="" width="15" height="15"></a></li>
+                <li><a href="">CV <img src="/assets/images/file.svg" alt="" width="15" height="15"></a></li>
             </ul>
         </div>
     </footer>
