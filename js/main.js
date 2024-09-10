@@ -48,18 +48,21 @@ sidebarLinks.forEach((link) => {
   })
 })
 
-document.addEventListener("scroll", () => {
-    if(window.scrollY >= 100 && !navbar.classList.contains("test"))
+if(document.title === "Brendon O'Neill's Portfolio")
+{
+  document.addEventListener("scroll", () => {
+    if(window.scrollY >= 100 && !navbar.classList.contains("add-bg"))
     {
         console.log("yes")
-        navbar.classList.add("test")
+        navbar.classList.add("add-bg")
     }
-    if(window.scrollY < 100 && navbar.classList.contains("test"))
+    if(window.scrollY < 100 && navbar.classList.contains("add-bg"))
     {
             console.log("yes")
-            navbar.classList.remove("test")
+            navbar.classList.remove("add-bg")
     }
 })
+}
 
 
 
