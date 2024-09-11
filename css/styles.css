@@ -755,14 +755,176 @@ footer a img {
 .project-header-bug {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
         url(../assets/images/webp/projects/bughead.webp);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-header-gamer {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+        url(../assets/images/webp/projects/gamer2.webp);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-header-kanji {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+        url(../assets/images/webp/projects/kanji2.webp);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-header-anime {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+        url(../assets/images/webp/projects/anime-header.webp);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-header-anime {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+        url(../assets/images/webp/projects/ff7header.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.project-main {
-    height: 100vh;
+.project-page-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    background-color: var(--black-v2);
 }
+
+.project-page-github,
+.project-page-live {
+    text-decoration: none;
+    padding: 1rem 0.4rem;
+    min-width: 190px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+.project-page-github img,
+.project-page-live img {
+    flex-basis: 25%;
+}
+
+
+.project-page-github {
+    background-color: var(--bg-colour);
+    color: white;
+    border: 1px solid white;
+}
+
+.project-page-live {
+    background-color: var(--secondary-colour);
+    color: var(--black-v2);
+}
+
+
+.project-page-main {
+    position: relative;
+    padding: 1rem 1.5rem;
+    color: white;
+    background-color: var(--black-v2);
+}
+
+.project-page-main h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-page-main p {
+    margin-bottom: 2rem;
+}
+
+.project-page-main ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 5rem;
+}
+
+.project-page-main ul li {
+    padding: 0.5rem;
+    border: 2px solid var(--text);
+    border-radius: 5px;
+}
+
+.project-page-sub {
+    position: relative;
+    padding-block: 2rem;
+    color: white;
+    background-color: var(--bg-colour);
+}
+
+.project-page-sub h3 {
+    padding: 0.5rem 1rem;
+    border-radius: 5px 30px 30px 5px;
+    background-color: var(--black-v2);
+    width: 65%;
+    margin-bottom: 1.4rem;
+}
+
+.project-page-sub p {
+    padding-inline: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+#l-p {
+    margin-bottom: 5rem;
+}
+
+.project-page-other {
+    padding: 1rem;
+    color: var(--text);
+    background-color: var(--black-v2);
+
+}
+
+.project-page-other h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-page-other-projects {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.project-page-other-projects a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-colour);
+    border-radius: 5px;
+}
+
+#active-project {
+    background-color: var(--secondary-active-colour);
+}
+
 
 /* tablet or higher */
 @media only screen and (min-width: 600px) {
@@ -858,6 +1020,23 @@ footer a img {
     .form-card {
         width: 75%;
     }
+
+    /* project pages */
+
+    .project-page-main ul {
+        margin-bottom: 7rem;
+    }
+
+    .project-page-sub h3 {
+        width: 40%;
+    }
+
+    .project-page-other-projects {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+
 }
 
 
@@ -1024,6 +1203,32 @@ footer a img {
     .footer-projects {
         flex-basis: 30%;
     }
+
+    /* project pages */
+
+    .project-page-main p,
+    .project-page-main ul {
+        width: 70%;
+        margin-inline: auto;
+    }
+
+
+    .project-page-main ul {
+        margin-bottom: 10rem;
+    }
+
+    .project-page-sub h3 {
+        width: 18%;
+        text-align: center;
+        margin-inline: auto;
+        border-radius: 5px;
+    }
+
+    .project-page-sub p {
+        width: 70%;
+        margin-inline: auto;
+    }
+
 
 
 }
