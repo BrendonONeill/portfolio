@@ -925,6 +925,104 @@ footer a img {
     background-color: var(--secondary-active-colour);
 }
 
+/* Design page */
+
+.design-header {
+    padding-block: 5rem;
+}
+
+.design-h1 {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text);
+
+}
+
+.photo {
+    position: relative;
+    color: var(--text);
+}
+
+.photo h2 {
+    background-color: var(--black-v2);
+    padding: 1rem;
+    width: 80%;
+    border-radius: 0 30px 30px 0;
+    margin-bottom: 2rem;
+}
+
+.graphic {
+    background-color: var(--black-v2);
+    padding-top: 2rem;
+    color: var(--text);
+}
+
+.graphic h2 {
+    background-color: var(--bg-colour);
+    padding: 1rem;
+    width: 80%;
+    border-radius: 0 30px 30px 0;
+    margin-bottom: 2rem;
+}
+
+
+.design-flex-photo {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    padding-bottom: 6rem;
+}
+
+.design-flex-graphic {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    padding-bottom: 6rem;
+}
+
+.design-flex-graphic img {
+    padding: 0.6rem;
+    background-color: var(--bg-colour);
+    border-radius: 5px;
+}
+
+.design-flex-photo img {
+    border-radius: 5px;
+}
+
+.design-flex-col {
+    display: flex;
+    flex-flow: column;
+    flex-basis: 32%;
+    gap: 1rem;
+
+}
+
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.show-lb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox img {
+    width: 60%;
+    padding: 1rem;
+    background-color: var(--bg-colour);
+    border-radius: 5px;
+}
+
 
 /* tablet or higher */
 @media only screen and (min-width: 600px) {
@@ -952,7 +1050,6 @@ footer a img {
         width: 40px;
         height: 40px;
     }
-
 
 
     header p {
@@ -1021,6 +1118,7 @@ footer a img {
         width: 75%;
     }
 
+
     /* project pages */
 
     .project-page-main ul {
@@ -1034,6 +1132,15 @@ footer a img {
     .project-page-other-projects {
         justify-content: center;
         gap: 1.5rem;
+    }
+
+
+    /* Design */
+
+    .photo h2,
+    .graphic h2 {
+        width: 50%;
+        padding-left: 2rem;
     }
 
 
@@ -1229,6 +1336,23 @@ footer a img {
         margin-inline: auto;
     }
 
+    /* Design */
+
+    .photo h2,
+    .graphic h2 {
+        margin: auto;
+        width: 20%;
+        border-radius: 5px;
+        text-align: center;
+        padding: 1rem;
+    }
+
+
+    .design-flex-graphic,
+    .design-flex-photo {
+        width: 60%;
+        margin: auto;
+    }
 
 
 }
@@ -1309,4 +1433,14 @@ footer a img {
     .footer-links ul {
         width: 40%;
     }
+
+
+
+    /* Design */
+
+    .design-flex-graphic,
+    .design-flex-photo {
+        width: 40%;
+    }
+
 }
