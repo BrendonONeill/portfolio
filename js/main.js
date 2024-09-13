@@ -1,3 +1,5 @@
+'use'
+
 // hero animation
 const textDisplay = document.querySelector("#animatedText");
 const textArray = ["Front-end Developer", "Graphic Designer"];
@@ -62,6 +64,32 @@ if(document.title === "Brendon O'Neill's Portfolio")
             navbar.classList.remove("add-bg")
     }
 })
+
+
+  textLoop()
+}
+
+if(document.title === "Brendon O'Neill's Designs"){
+  let main = document.querySelector("main")
+  let lightbox = document.querySelector(".lightbox")
+  let lightboxImg = document.querySelector(".lightbox img")
+
+  lightbox.addEventListener("click", () => {
+      lightbox.classList.remove("show-lb")
+  })
+  
+  main.addEventListener("click",(e) =>{
+    if(e.target.src !== undefined)
+    {
+      lightboxNewImg(e.target.src)
+    }
+  })
+
+  function lightboxNewImg(data){
+    lightboxImg.src = data
+    lightbox.classList.add("show-lb")
+  }
+
 }
 
 
@@ -122,4 +150,3 @@ darkButton.addEventListener("click", () => {
 
 
 
-textLoop()
