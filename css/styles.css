@@ -232,13 +232,16 @@ header p {
     cursor: pointer;
     top: 65%;
     left: 50%;
-    width: 40%;
+    width: 45%;
+    text-align: center;
     transform: translate(-50%, -35%);
     padding: 1rem;
     background-color: var(--secondary-colour);
     border-radius: 5px;
     font-size: 22px;
     font-weight: bold;
+    color: var(--primary-dark-colour);
+    text-decoration: none;
 }
 
 .hero-button:hover {
@@ -341,7 +344,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 4.45rem;
     justify-content: center;
 }
 
@@ -408,7 +411,7 @@ section {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4.45rem;
 }
 
 .skill-card {
@@ -456,7 +459,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
+    margin-bottom: 2.45rem;
 }
 
 .project-card {
@@ -530,7 +533,7 @@ section {
 
 .project-card-button-container {
 
-    grid-column: 2/5;
+    grid-column: 1/6;
     grid-row: 11/13;
     display: flex;
     justify-content: center;
@@ -538,12 +541,19 @@ section {
     padding: 1rem;
 }
 
-.project-card button {
+.project-card a {
     background-color: var(--secondary-colour);
     color: var(--nav-colour);
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 5px;
     font-weight: bold;
+    text-decoration: none;
+
+}
+
+.project-card a:hover {
+    background-color: var(--secondary-active-colour);
+    color: var(--text);
 }
 
 
@@ -583,12 +593,19 @@ section {
     padding: 2rem;
 }
 
-.design-button button {
-    padding: 1.2rem 1.4rem;
+.design-button a {
+    padding: 1rem 1.6rem;
     background-color: var(--secondary-colour);
+    text-decoration: none;
+    color: var(--primary-dark-colour);
     font-weight: bold;
     border-radius: 5px;
-    margin-bottom: 3rem;
+    margin-bottom: 2.45rem;
+}
+
+.design-button a:hover {
+    background-color: var(--secondary-active-colour);
+    color: var(--text);
 }
 
 .flex-hobbies {
@@ -597,33 +614,50 @@ section {
     gap: 3rem 0;
     justify-content: center;
     flex-wrap: wrap;
-    margin-bottom: 5rem;
+    margin-bottom: 3.45rem;
 }
 
 .hobby-card {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(4, 80px);
-    grid-template-rows: 75px 15px 75px 75px 75px;
+    grid-template-rows: 75px 100px 100px 100px;
+    background-color: var(--primary-colour);
+    padding: 0.3rem;
+    border-radius: 15px;
 }
 
 .hobby-header {
     grid-row: 1/2;
     grid-column: 1/5;
-    background-color: var(--secondary-active-colour);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px 5px 0 0;
-    border-bottom: 5px solid var(--text);
+    width: 60%;
+    color: var(--text);
 }
 
 .hobby-text {
-    grid-row: 3/6;
+    grid-row: 2/6;
     grid-column: 1/5;
-    padding: 1rem;
-    background-color: var(--primary-colour);
+    padding: 1.4rem 1rem 1rem 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-v2);
     color: var(--text);
-    border-radius: 0 0 5px 5px;
+    border-radius: 100px 15px 15px 15px;
+}
+
+.hobby-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    top: 15px;
+    right: 20px;
+    position: absolute;
+    padding: 0.3rem;
+    background-color: var(--primary-colour);
 }
 
 
@@ -692,6 +726,11 @@ form {
     border-radius: 5px;
     padding: 1rem;
     width: 100px;
+}
+
+.form-button:hover {
+    background-color: var(--secondary-active-colour);
+    color: var(--text);
 }
 
 
@@ -1147,7 +1186,7 @@ footer a img {
 }
 
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
 
 
 
@@ -1200,6 +1239,11 @@ footer a img {
         margin-left: 2rem;
     }
 
+    #nav-contact:hover {
+        background-color: var(--secondary-active-colour);
+        color: var(--text);
+    }
+
     .dark-mode-button {
         background-color: var(--light-black-bg);
         width: 60px;
@@ -1220,9 +1264,10 @@ footer a img {
     }
 
     .hero-button {
-        width: 10%;
+        width: 12%;
         top: 75%;
         transform: translate(-50%, -35%);
+        padding: 0.8rem 1.2rem;
     }
 
     .header {
@@ -1260,11 +1305,11 @@ footer a img {
 
     .flex-projects {
         width: 60%;
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
     }
 
     .design-button {
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
     }
 
     .design-img {
@@ -1276,7 +1321,7 @@ footer a img {
     }
 
     .flex-hobbies {
-        margin-bottom: 10rem;
+        margin-bottom: 8.5rem;
     }
 
     .form-card {
