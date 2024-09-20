@@ -823,9 +823,25 @@ footer a img {
     background-size: cover;
 }
 
-.project-header-anime {
+.project-header-csshelper {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-        url(../assets/images/webp/projects/ff7header.webp);
+        url(../assets/images/projects/css-header.webp);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-header-port {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+        url(../assets/images/projects/portfolio-cover.webp);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-header-ff7 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+        url(../assets/images/projects/ff7cover.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -870,6 +886,21 @@ footer a img {
     color: var(--black-v2);
 }
 
+.bug-tracking-info {
+    background-color: var(--secondary-colour);
+    padding: 1rem;
+    color: var(--black-v2);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.bt-p+.bt-p {
+    margin-bottom: 0.5rem;
+}
+
+.bt-b {
+    font-weight: bold;
+}
 
 .project-page-main {
     position: relative;
@@ -1173,6 +1204,10 @@ footer a img {
         gap: 1.5rem;
     }
 
+    .bug-tracking-info {
+        width: 45%;
+    }
+
 
     /* Design */
 
@@ -1180,6 +1215,10 @@ footer a img {
     .graphic h2 {
         width: 50%;
         padding-left: 2rem;
+    }
+
+    .lightbox img {
+        width: 60%;
     }
 
 
@@ -1282,7 +1321,7 @@ footer a img {
     }
 
     .about-img {
-        flex-basis: 25%;
+        flex-basis: 23%;
     }
 
     .about-text {
@@ -1358,6 +1397,11 @@ footer a img {
 
     /* project pages */
 
+    .bug-tracking-info {
+        width: 25%;
+        margin-left: 17rem;
+    }
+
     .project-page-main p,
     .project-page-main ul {
         width: 70%;
@@ -1397,6 +1441,10 @@ footer a img {
     .design-flex-photo {
         width: 60%;
         margin: auto;
+    }
+
+    .lightbox img {
+        width: 22%;
     }
 
 
@@ -1443,7 +1491,7 @@ footer a img {
     }
 
     .about-img {
-        flex-basis: 30%;
+        flex-basis: 26%;
     }
 
     .about-text {
@@ -1480,12 +1528,22 @@ footer a img {
     }
 
 
+    .bug-tracking-info {
+        width: 14%;
+        margin-left: 28rem;
+    }
+
 
     /* Design */
 
     .design-flex-graphic,
     .design-flex-photo {
         width: 40%;
+    }
+
+
+    .lightbox img {
+        width: 22%;
     }
 
 }
