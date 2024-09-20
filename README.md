@@ -3,10 +3,10 @@
 ## to do list
 
 
-- Fix links
-- 
-
-
-- Replace placeholder
+- Fix alts
+- Clean up text
 - Fix form
+- Deploy
+
+### after deployment
 - Fix light mode
