@@ -1,4 +1,4 @@
-'use'
+'use strict'
 
 // hero animation
 const textDisplay = document.querySelector("#animatedText");
@@ -8,6 +8,8 @@ let j = 0;
 let i = 0;
 let cycleFinished = false;
 
+const hero = document.querySelector("#home")
+
 //theme-toggle
 const darkButton = document.querySelector(".dark-mode-button");
 const darkToggle = document.querySelector(".dark-mode-toggle");
@@ -16,10 +18,22 @@ const image = document.querySelector(".image-toggle");
 // navbar
 let navbar = document.querySelector(".nav")
 let navburger = document.querySelector(".burger")
+let burgerImg = document.querySelector(".img-burger")
 let sidebar = document.querySelector(".sidebar")
 let sidebarClose = document.querySelector(".sidebar-close")
+let sidebarx = document.querySelector(".x")
 let sidebarLinks = document.querySelectorAll(".sidebar-links li")
 let sidebarBG = document.querySelector(".sidebar-bg")
+let github = document.querySelector(".github");
+let linkedin = document.querySelector(".linkedin");
+let cv = document.querySelector(".cv")
+
+if (localStorage.getItem("light") === null && localStorage.getItem("dark") === null) {
+  localStorage.setItem("dark", true);
+} 
+else if (localStorage.getItem("light")) {
+  themeChange();
+}
 
 
 navburger.addEventListener("click", () => {
@@ -55,12 +69,12 @@ if(document.title === "Brendon O'Neill's Portfolio")
   document.addEventListener("scroll", () => {
     if(window.scrollY >= 100 && !navbar.classList.contains("add-bg"))
     {
-        console.log("yes")
+      
         navbar.classList.add("add-bg")
     }
     if(window.scrollY < 100 && navbar.classList.contains("add-bg"))
     {
-            console.log("yes")
+          
             navbar.classList.remove("add-bg")
     }
 })
@@ -139,14 +153,35 @@ darkButton.addEventListener("click", () => {
       darkToggle.classList.toggle("toggle-light");
       darkToggle.classList.remove("toggle-dark");
       document.documentElement.setAttribute("data-theme", "light");
+      burgerImg.src = "assets/menu-dark.svg"
+      sidebarx.src = "assets/x-dark.svg"
+      github.src = "assets/images/media/github-dark.svg"
+      linkedin.src = "assets/images/media/linkedin-dark.svg"
+      cv.src = "assets/images/media/file-dark.svg"
+      if(document.title === "Brendon O'Neill's Portfolio")
+      {
+        hero.classList.add("main-header-light")
+        hero.classList.remove("main-header-dark")
+      }
+      
     } else {
       image.src = "assets/moon.svg";
       darkToggle.classList.toggle("toggle-dark");
       darkToggle.classList.remove("toggle-light");
       document.documentElement.setAttribute("data-theme", "dark");
+      burgerImg.src = "assets/menu.svg"
+      sidebarx.src = "assets/x.svg"
+      github.src = "assets/images/media/github.svg"
+      linkedin.src = "assets/images/media/linkedin.svg"
+      cv.src = "assets/images/media/file.svg"
+      if(document.title === "Brendon O'Neill's Portfolio")
+      {
+        hero.classList.remove("main-header-light")
+        hero.classList.add("main-header-dark")
+      }
     }
   }
 
 
-
-
+ 
+    
