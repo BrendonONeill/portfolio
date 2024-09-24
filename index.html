@@ -17,7 +17,8 @@
 <body>
     <nav class="nav">
         <div class="nav-burger">
-            <button class="button-reset burger"><img src="assets/menu.svg" alt="sidebar button"></button>
+            <button class="button-reset burger"><img src="assets/menu.svg" class="img-burger"
+                    alt="sidebar button"></button>
         </div>
         <div class="nav-links">
             <ul>
@@ -30,7 +31,7 @@
                 <li><a id="nav-contact" href="#contact">Contact Me</a></li>
             </ul>
         </div>
-        <div class="logo"><img src="assets/images/webp/logo.webp" alt="" width="50" height="50"></div>
+        <div class="logo"><img src="assets/images/webp/logo.webp" alt="portfolio logo" width="50" height="50"></div>
         <div class="nav-toggler">
             <button class="dark-mode-button" aria-label="dark mode toggle">
                 <span class="dark-mode-toggle toggle-dark">
@@ -41,7 +42,8 @@
     </nav>
     <div class="sidebar">
         <div class="sidebar-header">
-            <button class="sidebar-close"><img src="assets/x.svg" width="20" height="20" alt=""></button>
+            <button class="sidebar-close"><img src="assets/x.svg" class="x" width="20" height="20"
+                    alt="close button"></button>
         </div>
         <div class="sidebar-links-container">
             <ul class="sidebar-links">
@@ -56,7 +58,7 @@
         </div>
     </div>
     <div class="sidebar-bg display-bg"></div>
-    <header class="main-header" id="home">
+    <header class="main-header-dark" id="home">
 
         <div class="hero">
             <p>Hi,</p>
@@ -76,12 +78,24 @@
         </div>
 
     </header>
+    <div class="media-island">
+        <a href="https://github.com/BrendonONeill">
+            <img width="30" height="30" src="/assets/images/media/github-dark.svg" alt="github logo">
+        </a>
+        <a href="https://www.linkedin.com/in/brendon-o-neill">
+            <img width="30" height="30" src="/assets/images/media/linkedin-dark.svg" alt="linkedIn logo">
+        </a>
+        <a href="assets/cv/BrendonONeill-CV.pdf" download>
+            <img width="30" height="30" src="/assets/images/media/file-dark.svg" alt="file download">
+        </a>
+
+    </div>
     <main>
         <section class="section-light" id="about">
             <h2 class="header h-dark">About me</h2>
             <div class="about-flex">
                 <div class="about-img">
-                    <img src="assets/images/webp/brendonnobg.webp" alt="">
+                    <img src="assets/images/webp/brendonnobg.webp" alt=" this is a picture of me">
                     <div class="about-me-img-backer"></div>
                 </div>
 
@@ -667,11 +681,13 @@
         </div>
         <div class="footer-links">
             <ul>
-                <li><a href="https://github.com/BrendonONeill">GitHub <img src="/assets/images/github.svg" width="15"
-                            height="15" alt=""></a></li>
-                <li><a href="https://www.linkedin.com/in/brendon-o-neill">LinkedIn <img
-                            src="/assets/images/linkedin.svg" alt="" width="15" height="15"></a></li>
-                <li><a href="">CV <img src="/assets/images/file.svg" alt="" width="15" height="15"></a></li>
+                <li><a href="https://github.com/BrendonONeill">GitHub <img class="github"
+                            src="/assets/images/media/github.svg" width="15" height="15" alt="github logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/brendon-o-neill">LinkedIn <img class="linkedin"
+                            src="/assets/images/media/linkedin.svg" alt="linkedIn logo" width="15" height="15"></a></li>
+                <li><a href="assets/cv/BrendonONeill-CV.pdf" download>CV <img class="cv"
+                            src="/assets/images/media/file.svg" alt="file download" width="15" height="15"></a>
+                </li>
             </ul>
         </div>
     </footer>
