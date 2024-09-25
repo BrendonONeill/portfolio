@@ -57,6 +57,7 @@ html {
 :root[data-theme="dark"] {
     --primary-colour: #7223c7;
     --bg-colour: #2f2f2f;
+    --bg-graphic: #2f2f2f;
     --github: #2f2f2f;
     --black-v2: #252627;
     --text: #fff;
@@ -74,6 +75,7 @@ html {
     --black-v2: #bde0fe;
     --light-black-bg: #0077b6;
     --bg-colour: #f5f3f4;
+    --bg-graphic: #2f2f2f;
     --github: #2f2f2f;
     --primary-colour: #E6E6E6;
     --secondary-colour: #E67240;
@@ -1115,7 +1117,7 @@ footer a img {
 
 .design-flex-graphic img {
     padding: 0.6rem;
-    background-color: var(--bg-colour);
+    background-color: var(--bg-graphic);
     border-radius: 5px;
 }
 
@@ -1152,7 +1154,7 @@ footer a img {
 .lightbox img {
     width: 60%;
     padding: 1rem;
-    background-color: var(--bg-colour);
+    background-color: var(--bg-graphic);
     border-radius: 5px;
 }
 
@@ -1294,7 +1296,7 @@ footer a img {
 }
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
 
 
 
