@@ -1295,7 +1295,7 @@ footer a img {
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
 
     nav {
         padding: 1rem 4rem;
@@ -1330,7 +1330,7 @@ footer a img {
 
     .hero-button {
         width: 18%;
-        top: 75%;
+        top: 60%;
         font-size: 1.6rem;
         transform: translate(-50%, -35%);
         padding: 0.8rem 1.2rem;
