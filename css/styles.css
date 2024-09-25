@@ -1465,8 +1465,15 @@ footer a img {
         display: none;
     }
 
+
+    .main-header-dark,
+    .main-header-light {
+        height: 100vh;
+    }
+
     .hero {
         width: 60%;
+        top: 45%;
     }
 
     .hero-button {
