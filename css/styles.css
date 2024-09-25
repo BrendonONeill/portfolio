@@ -1295,6 +1295,100 @@ footer a img {
 
 }
 
+@media only screen and (min-width: 1000px) {
+
+    nav {
+        padding: 1rem 4rem;
+    }
+
+    .burger img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .dark-mode-button {
+        background-color: var(--light-black-bg);
+        width: 60px;
+        height: 33px;
+    }
+
+    .dark-mode-toggle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .main-header-dark,
+    .main-header-light {
+        height: 160vh;
+    }
+
+
+    .hero-button {
+        width: 18%;
+        top: 75%;
+        font-size: 1.6rem;
+        transform: translate(-50%, -35%);
+        padding: 0.8rem 1.2rem;
+    }
+
+    .sidebar {
+        width: 25%;
+    }
+
+    .sidebar-links-container {
+        margin-top: 1rem;
+    }
+
+    .sidebar-links {
+        gap: 0.2rem;
+    }
+
+    .header {
+        width: 30%;
+        margin: auto;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-img {
+        flex-basis: 35%;
+    }
+
+    .skill-flex {
+        justify-content: flex-start;
+    }
+
+
+
+    .design-img {
+        flex-basis: 25%;
+    }
+
+    .design-text {
+        flex-basis: 40%;
+    }
+
+
+
+    .flex-hobbies {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 8.5rem;
+    }
+
+    .lightbox img {
+        width: 25%;
+    }
+
+
+
+}
+
 
 @media only screen and (min-width: 1300px) {
 
@@ -1361,16 +1455,7 @@ footer a img {
         color: var(--text);
     }
 
-    .dark-mode-button {
-        background-color: var(--light-black-bg);
-        width: 60px;
-        height: 33px;
-    }
 
-    .dark-mode-toggle {
-        width: 30px;
-        height: 30px;
-    }
 
     .sidebar {
         display: none;
@@ -1439,6 +1524,7 @@ footer a img {
 
     .flex-hobbies {
         margin-bottom: 8.5rem;
+        width: 100%;
     }
 
     .form-card {
