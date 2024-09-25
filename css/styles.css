@@ -761,6 +761,7 @@ form {
 
 .form-model {
     background-color: var(--secondary-colour);
+    text-align: center;
     color: black;
     display: flex;
     align-content: center;
@@ -1246,6 +1247,12 @@ footer a img {
         gap: 1.5rem;
     }
 
+    .form-model {
+        width: 30%;
+        font-size: 1.2rem;
+        height: 60px;
+    }
+
     .form-card {
         width: 75%;
     }
@@ -1331,6 +1338,13 @@ footer a img {
         padding: 0.6rem;
         font-weight: bold;
         font-size: 1.3rem;
+        border: 2px solid transparent;
+    }
+
+    .nav-links a:hover {
+        position: relative;
+        border: 2px solid var(--text);
+        border-radius: 5px;
     }
 
     #nav-contact {
@@ -1428,6 +1442,12 @@ footer a img {
     .form-card {
         width: 40%;
         margin-bottom: 5rem;
+    }
+
+    .form-model {
+        width: 15%;
+        font-size: 1.2rem;
+        height: 60px;
     }
 
     footer {
