@@ -16,17 +16,22 @@ const darkToggle = document.querySelector(".dark-mode-toggle");
 const image = document.querySelector(".image-toggle");
 
 // navbar
-let navbar = document.querySelector(".nav")
-let navburger = document.querySelector(".burger")
-let burgerImg = document.querySelector(".img-burger")
-let sidebar = document.querySelector(".sidebar")
-let sidebarClose = document.querySelector(".sidebar-close")
-let sidebarx = document.querySelector(".x")
-let sidebarLinks = document.querySelectorAll(".sidebar-links li")
-let sidebarBG = document.querySelector(".sidebar-bg")
+let navbar = document.querySelector(".nav");
+let navburger = document.querySelector(".burger");
+let burgerImg = document.querySelector(".img-burger");
+let sidebar = document.querySelector(".sidebar");
+let sidebarClose = document.querySelector(".sidebar-close");
+let sidebarx = document.querySelector(".x");
+let sidebarLinks = document.querySelectorAll(".sidebar-links li");
+let sidebarBG = document.querySelector(".sidebar-bg");
 let github = document.querySelector(".github");
 let linkedin = document.querySelector(".linkedin");
 let cv = document.querySelector(".cv")
+
+//form
+const form = document.querySelector("#form")
+const formmodel = document.querySelector("#formmodel")
+
 
 if (localStorage.getItem("light") === null && localStorage.getItem("dark") === null) {
   localStorage.setItem("dark", true);
@@ -184,4 +189,28 @@ darkButton.addEventListener("click", () => {
 
 
  
-    
+  form.addEventListener('submit', function(event) {
+
+    formHandler(event)
+  })
+  
+  async function formHandler(e) {
+    e.preventDefault()
+    let name = document.querySelector("#name")
+    let email = document.querySelector("#email")
+    let text = document.querySelector("#text")
+    let a = await fetch("https://yko8kw06tyklhyhrgtrg.brendon-projects.blog/formemail/", {
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        method: "POST",
+        body: JSON.stringify({ name: name.value, email: email.value, text: text.value }),
+    })
+    name.value = "";
+    email.value = "";
+    text.value = "";
+    formmodel.classList.add("form-appear")
+    setTimeout(() => {
+      formmodel.classList.remove("form-appear")
+    }, 4000)
+  }
