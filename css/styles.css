@@ -961,10 +961,12 @@ footer a img {
 
 .bt-p+.bt-p {
     margin-bottom: 0.5rem;
+    color: black;
 }
 
 .bt-b {
     font-weight: bold;
+
 }
 
 .project-page-main {
@@ -982,6 +984,7 @@ footer a img {
 
 .project-page-main p {
     margin-bottom: 2rem;
+    color: black;
 }
 
 .project-page-main ul {
