@@ -7,6 +7,11 @@ efficient code and updated CSS styles. The portfolio now showcases my projects, 
 the skills I’ve developed over the past few years, serving as a personal reflection of my growth as a
 web developer.
 
-## bugs
+## Tools
+- HTML
+- CSS3
+- Javascript
+
+## known bugs
 
 - Fix ui on ipad the hero and buttons on project is stretching 

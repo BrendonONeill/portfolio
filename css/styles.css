@@ -959,7 +959,7 @@ footer a img {
     border-radius: 5px;
 }
 
-.bt-p+.bt-p {
+.bt-p {
     margin-bottom: 0.5rem;
     color: black;
 }
@@ -984,7 +984,6 @@ footer a img {
 
 .project-page-main p {
     margin-bottom: 2rem;
-    color: black;
 }
 
 .project-page-main ul {
