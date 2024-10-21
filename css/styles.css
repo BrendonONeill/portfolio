@@ -237,7 +237,8 @@ nav {
     gap: 1.4rem 0;
 }
 
-header p {
+header p,
+header h1 {
     color: var(--text);
     font-size: 1.6rem;
     font-weight: bold;
@@ -1189,7 +1190,8 @@ footer a img {
     }
 
 
-    header p {
+    header p,
+    header h1 {
         font-size: 2.8rem;
     }
 
@@ -1646,7 +1648,8 @@ footer a img {
         width: 40%;
     }
 
-    header p {
+    header p,
+    header h1 {
         font-size: 3.5rem;
     }
 
