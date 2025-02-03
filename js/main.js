@@ -2,7 +2,7 @@
 
 // hero animation
 const textDisplay = document.querySelector("#animatedText");
-const textArray = ["Front-end Developer", "Graphic Designer"];
+const textArray = ["Software Engineer", "Graphic Designer"];
 let currentText = [" "];
 let j = 0;
 let i = 0;
