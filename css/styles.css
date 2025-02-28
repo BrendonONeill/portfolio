@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;0,900;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 
 
@@ -632,10 +633,18 @@ section {
 
 .design-img {
     flex-basis: 85%;
+    border: 10px solid white;
+    background-color: white;
 }
 
-.design-img img {
-    border-radius: 5px;
+.design-img-text {
+    background-color: white;
+    padding: 1rem;
+    font-family: "Gloria Hallelujah", serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: underline;
 }
 
 .design-text {
@@ -1243,7 +1252,7 @@ footer a img {
 
 
     .design-img {
-        flex-basis: 50%;
+        flex-basis: 40%;
     }
 
     .design-text {
@@ -1536,6 +1545,7 @@ footer a img {
 
     .design-text {
         flex-basis: 30%;
+        font-size: 1.25rem;
     }
 
     .flex-hobbies {
@@ -1694,16 +1704,18 @@ footer a img {
     }
 
     .flex-text {
-        width: 60%;
+        width: 68%;
+        gap: 0 4rem;
         margin: auto;
     }
 
     .design-img {
-        flex-basis: 18%;
+        flex-basis: 15%;
     }
 
     .design-text {
-        flex-basis: 30%;
+        flex-basis: 40%;
+        font-size: 1.5rem;
     }
 
     .form-card {
