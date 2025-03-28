@@ -1307,6 +1307,11 @@ footer a img {
     }
 
 
+    .project-page-buttons {
+        flex-flow: row;
+    }
+
+
 }
 
 @media only screen and (min-width: 900px) {
