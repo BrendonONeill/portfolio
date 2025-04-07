@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" Hi, My Name is Brendon O'Neill. I am Front-end developer and Graphic Designer, I'm passionate
+    about improving my development and design skills as well as teaching people about Web
+    Development / Programming.">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Brendon O'Neill's Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="nav add-bg">
+        <div class="nav-burger">
+            <button class="button-reset burger"><img src="assets/menu.svg" class="img-burger"
+                    alt="sidebar button"></button>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="index.html#hobbies">Hobbies</a></li>
+                <li><a id="nav-contact" href="inde.html#contact">Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="logo"><img src="assets/images/webp/logo.webp" alt="" width="50" height="50"></div>
+        <div class="nav-toggler">
+            <button class="dark-mode-button" aria-label="dark mode toggle">
+                <span class="dark-mode-toggle toggle-dark">
+                    <img class="image-toggle" src="assets/moon.svg" alt="dakrmode indicator" width="15" height="15">
+                </span>
+            </button>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-close"><img src="assets/x.svg" class="x" width="20" height="20" alt=""></button>
+        </div>
+        <div class="sidebar-links-container">
+            <ul class="sidebar-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Me</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="index.html#hobbies">Hobbies</a></li>
+                <li><a id="sidebar-contact" href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar-bg display-bg"></div>
+    <header class="project-header project-header-gamer">
+
+        <div class="divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path d="M1200 120L0 0 0 0 1200 0 1200 120z" class="shape-fill-0"></path>
+            </svg>
+        </div>
+
+    </header>
+    <main>
+        <div class="project-page-buttons">
+            <a href="https://github.com/BrendonONeill/Gamer-Data" target="_blank" class="project-page-github"><img
+                    src="assets/images/media/github.svg" width="15" height="15" alt="">GitHub</a>
+            <a href="https://gamer-data.onrender.com/" target="_blank" class="project-page-live"><img
+                    src="assets/images/live.svg" width="15" height="15" alt="">Live
+                Preview</a>
+        </div>
+        <div class="project-page-main">
+            <h2>Gamer-Data</h2>
+            <div class="bug-tracking-info">
+                <p class="bt-p">Test account</p>
+                <p class="bt-p">Username: <span class="bt-b">fredb@gamer.ie</span> </p>
+                <p class="bt-p">Password: <span class="bt-b">t35t1ing1234</span> </p>
+            </div>
+
+            <p>
+                This application is a demo that allows users to search for information on video games by utilizing the
+                RAWG API,
+                providing access to a vast database of game details. In addition to browsing games, users can create
+                personalized collections of the games they own or have played.
+            </p>
+
+            <p>This project builds upon the concepts from two previous projects: the anime-data and bug tracking apps.
+                From the anime-data project, the focus
+                on API integration and displaying information on a website was applied, while from the bug tracking app,
+                the use of a database for storing and retrieving data was incorporated. By combining these concepts, the
+                app not only fetches game data from the API but also enables users to store and manage their game
+                collections within the system.</p>
+
+            <ul>
+                <li>React</li>
+                <li>JSX</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Firebase</li>
+                <li>TanStack Query</li>
+            </ul>
+
+            <div class="divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 0 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="project-page-sub">
+            <h3>Features</h3>
+            <p>Users can search for a game in a list of games that are sorted with rankings from the metacritic score.
+            </p>
+            <p>Users can search for games by genre or by using the search bar and type the name of the game.</p>
+            <p>Users can demo an account that allows users to select games to add to a list and they can rate games in
+                their own list</p>
+
+
+            <h3>Lessons Learned</h3>
+            <p>How react renders and when information will be displayed on the page, I learnt a lot from this
+                project as I didn't fully understand how rendering worked.</p>
+            <p>Using React with a backend (Firebase) and Api. This took a most of my time as trying to sort data
+                from one place to another and pick the best solutions to provide me the best answers.</p>
+            <p> Understanding how firebase stores information. I'm familiar with MongoDB and SQL databases but
+                firebase did it a bit different and I had to get my head around the new way to get data.</p>
+            <p>Using useEffect less for API calls and instead using react query.</p>
+
+            <h3>Future features</h3>
+            <p>See other users games collection if public to other users.</p>
+            <p>Rate games in your collection how how satisfied you were with them.</p>
+            <p>Set if the game is completed or not.</p>
+
+
+            <h3>Working On / Research</h3>
+            <p>Add and improve accessibility on website.</p>
+
+            <h3>Deployment</h3>
+            <p id="l-p">Deployed on render with firebase as the database.</p>
+
+            <div class="divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path d="M1200 120L0 0 0 0 1200 0 1200 120z" class="shape-fill-0"></path>
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="project-page-other">
+            <h3>Other Projects</h3>
+            <ul class="project-page-other-projects">
+                <li><a href="bugtracking.html">1</a></li>
+                <li><a id="active-project" href="#">2</a></li>
+                <li><a href="kanjistudy.html">3</a></li>
+                <li><a href="animidata.html">4</a></li>
+                <li><a href="csshelper.html">5</a></li>
+                <li><a href="portfolio.html">6</a></li>
+                <li><a href="ffvii.html">7</a></li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <div class="footer-projects">
+            <ul>
+                <li><a href="bugtracking.html">Bug Tracking App</a></li>
+                <li><a href="gamerdata.html">Gamer-Data</a></li>
+                <li><a href="kanjistudy.html">Kanji Study</a></li>
+                <li><a href="animidata.html">Anime-Data</a></li>
+                <li><a href="csshelper.html">CSS-Helper</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="ffvii.html">FFVII Information</a></li>
+            </ul>
+        </div>
+        <div class="footer-name">
+            <p>Brendon O'Neill 2024 </p>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="https://github.com/BrendonONeill" target="_blank">GitHub <img class="github"
+                            src="assets/images/media/github.svg" width="15" height="15" alt="github logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/brendon-o-neill" target="_blank">LinkedIn <img class="linkedin"
+                            src="assets/images/media/linkedin.svg" alt="linkedIn logo" width="15" height="15"></a></li>
+                <li><a href="assets/cv/BrendonONeill-CV.pdf" download>CV <img class="cv"
+                            src="assets/images/media/file.svg" alt="file download" width="15" height="15"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script  type="module"  src="js/main.js" async defer></script>
+</body>
+
+</html>
