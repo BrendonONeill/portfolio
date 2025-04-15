@@ -199,7 +199,7 @@ darkButton.addEventListener("click", () => {
     let name = document.querySelector("#name")
     let email = document.querySelector("#email")
     let text = document.querySelector("#text")
-    let a = await fetch("https://yko8kw06tyklhyhrgtrg.brendon-projects.blog/formemail/", {
+    let a = await fetch("https://q8gs8gw0s8wwg0804wcw8ogo.brendons-projects.online/formemail/", {
         headers: {
             'Content-Type': 'application/json'
         },
