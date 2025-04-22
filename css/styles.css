@@ -69,6 +69,8 @@ html {
     --primary-dark-colour: #252627;
     --project-bg: #252627;
     --secondary-active-colour: #E67240;
+    --divider: white;
+    --main-img-bg: #252627;
 }
 
 :root[data-theme="light"] {
@@ -88,6 +90,8 @@ html {
     --card-image-bg: #ced4da;
     --project-bg: #e6e6e6;
     --backgroundimg: url(../images/lightbg.webp);
+    --divider: #252627;
+    --main-img-bg: #0077b6;
 
     --secondary-white: rgb(223, 223, 223);
     --shadow-back: 0px 8px 24px rgb(0, 0, 0, 0.40);
@@ -414,27 +418,29 @@ section {
 }
 
 .about-img {
-    position: relative;
-    overflow-x: visible;
-    overflow-y: hidden;
-    flex-basis: 80%;
+
+    flex-basis: 85%;
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    border: 1px solid var(--divider);
+    border-radius: 0 0 5px 5px;
 }
 
 .about-img img {
-    z-index: 2;
-    position: relative;
-
+    background-color: var(--main-img-bg);
+    border: 8px solid white;
 }
 
-.about-me-img-backer {
-    background-color: rgba(37, 38, 39, 0.3);
-    position: absolute;
-    left: 0;
-    bottom: -100px;
-    right: 0;
-    top: 100px;
-    z-index: 1;
-    border-radius: 50%;
+.about-img-text
+{
+    padding: 1.5rem;
+    text-align: center;
+    font-family: "Gloria Hallelujah", serif;
+    font-weight: bold;
+    border: 8px solid white;
+    font-size: 1.5rem;
+    border-radius: 0 0 5px 5px;
 }
 
 .about-text {
@@ -1225,7 +1231,7 @@ footer a img {
 
 
     .about-img {
-        flex-basis: 55%;
+        flex-basis: 45%;
     }
 
     .about-text {
@@ -1379,8 +1385,9 @@ footer a img {
     }
 
     .about-img {
-        flex-basis: 30%;
+        flex-basis: 18%;
     }
+
 
     .skill-flex {
         justify-content: flex-start;
@@ -1514,7 +1521,12 @@ footer a img {
     }
 
     .about-img {
-        flex-basis: 23%;
+        flex-basis: 18%;
+    }
+
+    .about-img-text
+    {
+        padding: 1rem;
     }
 
     .about-text {
@@ -1693,7 +1705,7 @@ footer a img {
     }
 
     .about-img {
-        flex-basis: 26%;
+        flex-basis: 20%;
     }
 
     .about-text {
