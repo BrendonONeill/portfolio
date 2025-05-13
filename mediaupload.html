@@ -69,22 +69,22 @@
     </header>
     <main>
         <div class="project-page-buttons">
-            <a href="https://github.com/BrendonONeill/portfolio" target="_blank" class="project-page-github"><img
+            <a href="" class="project-page-github"><img
                     src="assets/images/media/github.svg" width="15" height="15" alt="">GitHub</a>
         </div>
         <div class="project-page-main">
-            <h2>Portfolio</h2>
-            <p>I initially created my first portfolio using Wix, but as I gained experience in web development, I began
-                using a variety of frameworks and libraries. Over time, I became more comfortable coding websites from
-                scratch with raw HTML, CSS, and JavaScript. This motivated me to rebuild my portfolio with cleaner, more
-                efficient code and updated CSS styles. The portfolio now showcases my projects, designs, and highlights
-                the skills I’ve developed over the past few years, serving as a personal reflection of my growth as a
-                web developer.
+            <h2>Media Upload</h2>
+            <p>This is an application where users can upload images and videos to an s3 bucket on AWS for a public event. I have it hosted on a VPS on Hetzner Cloud with a Nginx wen server acting as a load balancer to 3 docker containers with node js app that upload the media to the s3 bucket. I wanted to make sure it has a user friendly approach as people attending might not be too tech savvy so I made the uploading clear and user friendly. 
             </p>
 
             <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
+                <li>Docker</li>
+                <li>Docker-Compose</li>
+                <li>Nginx</li>
+                <li>AWS</li>
+                <li>SQL</li>
+                <li>VPS</li>
+                <li>Node JS</li>
                 <li>Javascript</li>
             </ul>
 
@@ -99,26 +99,33 @@
 
         <div class="project-page-sub">
             <h3>Features</h3>
-            <p>Users can check out my Photoshop & Illustrator designs</p>
-            <p>Users try out my projects and see how I coded each project</p>
+            <p>Users can upload images and video up to 2GB.</p>
+            <p>users can upload up to 20 media files with a limit of 5GB.</p>
+            <p>Large media files are chunked and send up chunk by chunk.</p>
+            <p>Users can will get a list of file being uploaded with files names and file information.</p>
+            <p>Files can be removed from list before upload.</p>
+            <p>When uploading a UI will show your progression of the files being uploaded.</p>
+            <p>information and Error pop up explaining if upload completed or a file failed to upload.</p>
 
 
             <h3>Lessons Learned</h3>
-            <p> I learnt a bit more about how SVG works and new ways to style CSS ui.</p>
-            <p>I learnt more on how to create better looking ui and wish to learn mor eon this topic.</p>
+            <p>Learned about how to make websites more user friendly and to keep the users more informed on whats happening with uploads.</p>
+            <p>Understanding how to set up a VPS to be secure and to use linux command line a lot more comfortable.</p>
+            <p>Working with docker and docker compose on how to deploy multiply containers that can communicate to a database.</p>
+            <p>Learning about buffering and a bit more of streaming files in node.</p>
+            <p>Understanding how Nginx works and how to load balance incoming requests.</p>
 
             <h3>Future features</h3>
-            <p>I hope to be able to remove the bootstrap containers to support my design and have a more lively
-                design to add more of my character. Add more designs to my gallery like my figma designs and video
-                edits. As I improve my design of websites I want to give my design a more bold look.</p>
+            <p>Improve UI and user experience</p>
+            <p>Improved error handling methods</p>
 
 
             <h3>Working On / Research</h3>
-            <p>Cleaning up UI</p>
-            <p>Fixing bugs</p>
+            <p>Cleaning up error handling</p>
+            <p>improving docker usage</p>
 
             <h3>Deployment</h3>
-            <p id="l-p">Deployed on GitHub Pages</p>
+            <p id="l-p">VPS on Hetzner</p>
 
             <div class="divider">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -133,11 +140,12 @@
             <h3>Other Projects</h3>
             <ul class="project-page-other-projects">
                 <li><a href="bugtracking.html">1</a></li>
-                <li><a href="gamerdata.html">2</a></li>
-                <li><a href="kanjistudy.html">3</a></li>
-                <li><a href="animidata.html">4</a></li>
-                <li><a href="csshelper.html">5</a></li>
-                <li><a id="active-project" href="portfolio.html">6</a></li>
+                <li><a id="active-project" href="mediaupload.html">2</a></li>
+                <li><a href="gamerdata.html">3</a></li>
+                <li><a href="kanjistudy.html">4</a></li>
+                <li><a href="animidata.html">5</a></li>
+                <li><a href="csshelper.html">6</a></li>
+                
             </ul>
         </div>
 
@@ -153,15 +161,16 @@
         <div class="footer-projects">
             <ul>
                 <li><a href="bugtracking.html">Bug Tracking App</a></li>
+                <li><a href="mediaupload.html">Media Upload</a></li>
                 <li><a href="gamerdata.html">Gamer-Data</a></li>
                 <li><a href="kanjistudy.html">Kanji Study</a></li>
                 <li><a href="animidata.html">Anime-Data</a></li>
                 <li><a href="csshelper.html">CSS-Helper</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                
             </ul>
         </div>
         <div class="footer-name">
-            <p>Brendon O'Neill 2024 </p>
+            <p>Brendon O'Neill 2025 </p>
         </div>
         <div class="footer-links">
             <ul>
