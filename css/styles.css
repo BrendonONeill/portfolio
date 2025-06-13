@@ -1664,6 +1664,46 @@ footer a img {
 
 }
 
+@media only screen and (min-width: 1400px)
+{
+    .hero-button
+    {
+        width: 16%;
+        top: 75%;
+        transform: translate(-50%, -35%);
+        padding: 0.8rem 1.2rem;
+    }
+    .about-img
+    {
+        flex-basis: 25%;
+    }
+
+    .about-text
+    {
+        flex-basis: 50%;
+    }
+
+    .flex-projects {
+        width: 80%;
+    }
+
+    .design-img
+    {
+        flex-basis: 20%;
+    }
+
+    .design-text
+    {
+        flex-basis: 40%;
+    }
+
+    .bug-tracking-info
+    {
+        width: 30%;
+        margin-left: 14rem;
+    }
+}
+
 
 @media only screen and (min-width: 2000px) {
 
@@ -1706,11 +1746,11 @@ footer a img {
     }
 
     .about-img {
-        flex-basis: 20%;
+        flex-basis: 30%;
     }
 
     .about-text {
-        flex-basis: 50%;
+        flex-basis: 60%;
     }
 
     .skill-flex {
@@ -1718,7 +1758,7 @@ footer a img {
     }
 
     .flex-projects {
-        width: 40%;
+        width: 50%;
     }
 
     .flex-text {
