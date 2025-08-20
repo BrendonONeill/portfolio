@@ -1704,6 +1704,61 @@ footer a img {
     }
 }
 
+@media only screen and (min-width: 1800px) {
+
+    .hero-button
+    {
+        width: 12%
+    }
+
+     .about-img {
+        flex-basis: 20%;
+    }
+
+    .about-text {
+        flex-basis: 35%;
+    }
+
+    .skill-card
+    {
+        height: 145px;
+    }
+
+    .skill-text
+    {
+        width: 110px;
+        height: 80px;
+    }
+
+    .flex-projects
+    {
+        width: 65%;
+    }
+
+    .design-img
+    {
+        flex-basis: 25%;
+    }
+
+    .design-text
+    {
+        flex-basis: 55%;
+    }
+
+    .flex-text
+    {
+        width: 60%;
+        margin: auto;
+    }
+
+    .bug-tracking-info {
+        width: 20%;
+        margin-left: 18rem;
+    }
+
+}
+
+
 
 @media only screen and (min-width: 2000px) {
 
