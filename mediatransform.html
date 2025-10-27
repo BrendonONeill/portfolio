@@ -31,7 +31,7 @@
                 <li><a id="nav-contact" href="index.html#contact">Contact Me</a></li>
             </ul>
         </div>
-        <div class="logo"><img src="assets/images/webp/logo.webp" alt="portfolio logo" width="50" height="50"></div>
+        <div class="logo"><img src="assets/images/webp/logo.webp" alt="" width="50" height="50"></div>
         <div class="nav-toggler">
             <button class="dark-mode-button" aria-label="dark mode toggle">
                 <span class="dark-mode-toggle toggle-dark">
@@ -57,7 +57,7 @@
         </div>
     </div>
     <div class="sidebar-bg display-bg"></div>
-    <header class="project-header project-header-bug">
+    <header class="project-header project-header-media">
 
         <div class="divider">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -69,39 +69,20 @@
     </header>
     <main>
         <div class="project-page-buttons">
-            <a href="https://github.com/BrendonONeill/BugTrackingAppV2" target="_blank" class="project-page-github"><img
+            <a href="https://github.com/BrendonONeill/media-transform-system" target="_blank" class="project-page-github"><img
                     src="assets/images/media/github.svg" width="15" height="15" alt="">GitHub</a>
-            <a href="https://bug-tracking-app.vercel.app/login" target="_blank" class="project-page-live"><img
-                    src="assets/images/live.svg" width="15" height="15" alt="">Live
-                Preview</a>
         </div>
         <div class="project-page-main">
-            <h2>Bug Tracking App</h2>
-            <div class="bug-tracking-info">
-                <p class="bt-p">Test account</p>
-                <p class="bt-p">Username: <span class="bt-b">ShaneK@gmail.com</span> </p>
-                <p class="bt-p">Password: <span class="bt-b">rty9[0]q</span> </p>
-            </div>
-
-            <p>This bug tracking application is a demo version that is designed to help teams or companies to manage and
-                solve software issues. Users can log and track bugs by categorizing them based on type, and prioritize
-                them according to their importance. The system operates as a CRUD (Create, Read, Update, Delete)
-                application, allowing users to sign in as either administrators or
-                standard users. Once logged in, users can create public bugs, visible to the entire team, or private
-                bugs for individual work. Additionally, the app offers filtering and sorting features, enabling
-                users to easily organize bugs based on various criteria. Users can also add comments under each bug to
-                to communicate and collaboration throughout the debugging process.</p>
+            <h2>Media Transform</h2>
+            <p>Media Transform is an application that will have multiply features that allow users to manipulate media with a GUI. Right now it is a video editing application, that allows users to select a video that they want to change. This can be done by removing or changing streams on the video. once they are satisfied with their changes the video will be passed through FFMPEG and returned to the user in the selected location.  </p>
 
             <ul>
-                <li>Next.js</li>
-                <li>CSS3</li>
-                <li>JSX</li>
-                <li>JavaScript</li>
-                <li>JWT</li>
-                <li>Mongo DB</li>
-                <li>Mongoose</li>
-                <li>Bcrypt</li>
-                <li>Limiter</li>
+                <li>Node js</li>
+                <li>Express</li>
+                <li>FFMPEG</li>
+                <li>Docker</li>
+                <li>Docker-Compose</li>
+                <li>Javascript</li>
             </ul>
 
             <div class="divider">
@@ -115,39 +96,28 @@
 
         <div class="project-page-sub">
             <h3>Features</h3>
-            <p class="project-feature">Users can create & view bug tickets.</p>
-            <p class="project-feature">Users can send bugs to a recycling bin that removes the bug after a month or users can delete them from
-                the recycling bin.</p>
-            <p class="project-feature">Admin users can create & delete new users.</p>
-            <p class="project-feature">Users can filter bugs that only belong to themselves or everyone & can sort the bugs by different
-                options.</p>
+            <p class="project-feature">Videos can be encoded to another format.</p>
+            <p class="project-feature">Users can remove or manipulate streams in video files.</p>
+            <p class="project-feature">Users can get information on video files.</p>
 
 
             <h3>Lessons Learned</h3>
-            <p class="project-lessons">
-                The first lesson I have learnt when creating my first next.js app was how the front-end and back-end
-                communicate and the difference between server-side rendering compared to client-side rendering.
-            </p>
-            <p class="project-lessons">I have also have a better understanding on how cookies and sessions work and how to use them to improve
-                my applications functionality.</p>
-            <p class="project-lessons">Another lesson I learnt was about how an application might work without bugs in the local environment,
-                but once you host it online this can be a different story. I had many back and forward deployments to
-                try and figure out different bugs and error crashing the app this gave me a new found respect for the
-                knowledge needed around deploying online.</p>
+            <p class="project-lessons">Learned about how to handle moving large files from server to server in chunks.</p>
+            <p class="project-lessons">Have a better understanding on how video streams work.</p>
+            <p class="project-lessons">I learnt how to implement a queue system for my more heavy work load tasks.</p>
 
             <h3>Future features</h3>
-            <p class="project-future">I hope to be able to upload images for bugs to help the users to understand the problem of a bug.</p>
-            <p class="project-future">User's can comment on other users bugs to ask questions, supply ideas or explain bug.</p>
-            <p class="project-future">To improve my authentication and allow users more control over their passwords </p>
-            <p class="project-future">Password reset using emails.</p>
+            <p class="project-future">Convert videos into gif.</p>
+            <p class="project-future">Image transformation.</p>
+            <p class="project-future">video folder encoding automation.</p>
 
 
             <h3>Working On / Research</h3>
-            <p class="project-research">Adding comments under bugs so developers can discuss the bug and its needs.</p>
-            <p class="project-research">Improve UI design and better load animations.</p>
+            <p class="project-research">Cleaning up UI.</p>
+            <p class="project-research">Diving deeper into how to get the most out of FFMPEG.</p>
 
             <h3>Deployment</h3>
-            <p class="project-deploy" id="l-p">Deployed on Vercel</p>
+            <p class="project-deploy" id="l-p">Designed to be used Locally to help with media work.</p>
 
             <div class="divider">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -162,12 +132,11 @@
             <h3>Other Projects</h3>
             <ul class="project-page-other-projects">
                 <li><a href="mediaupload.html">1</a></li>
-                <li><a id="active-project" href="#">2</a></li>
-                <li><a href="mediatransform.html">3</a></li>
+                <li><a href="bugtracking.html">2</a></li>
+                <li><a id="active-project" href="#">3</a></li>
                 <li><a href="csshelper.html">4</a></li>
                 <li><a href="kanjistudy.html">5</a></li>
                 <li><a href="gamerdata.html">6</a></li>
-                
             </ul>
         </div>
 
