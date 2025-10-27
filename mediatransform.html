@@ -31,19 +31,18 @@
                 <li><a id="nav-contact" href="index.html#contact">Contact Me</a></li>
             </ul>
         </div>
-        <div class="logo"><img src="assets/images/webp/logo.webp" alt="portfolio logo" width="50" height="50"></div>
+        <div class="logo"><img src="assets/images/webp/logo.webp" alt="" width="50" height="50"></div>
         <div class="nav-toggler">
             <button class="dark-mode-button" aria-label="dark mode toggle">
                 <span class="dark-mode-toggle toggle-dark">
-                    <img class="image-toggle" src=" assets/moon.svg" alt="dakrmode indicator" width="15" height="15">
+                    <img class="image-toggle" src="assets/moon.svg" alt="dakrmode indicator" width="15" height="15">
                 </span>
             </button>
         </div>
     </nav>
     <div class="sidebar">
         <div class="sidebar-header">
-            <button class="sidebar-close"><img src="assets/x.svg" class="x" width="20" height="20"
-                    alt="close button"></button>
+            <button class="sidebar-close"><img src="assets/x.svg" class="x" width="20" height="20" alt=""></button>
         </div>
         <div class="sidebar-links-container">
             <ul class="sidebar-links">
@@ -58,7 +57,7 @@
         </div>
     </div>
     <div class="sidebar-bg display-bg"></div>
-    <header class="project-header project-header-anime">
+    <header class="project-header project-header-media">
 
         <div class="divider">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -70,28 +69,20 @@
     </header>
     <main>
         <div class="project-page-buttons">
-            <a href="https://github.com/BrendonONeill/Animi-Data-v2" target="_blank" class="project-page-github"><img
-                    src="assets/images/media/github.svg" width="15" height="15" alt="github logo">GitHub</a>
-            <a href="https://animi-data-v2.onrender.com/" target="_blank" class="project-page-live"><img
-                    src="assets/images/live.svg" width="15" height="15" alt="live preview">Live
-                Preview</a>
+            <a href="https://github.com/BrendonONeill/media-transform-system" target="_blank" class="project-page-github"><img
+                    src="assets/images/media/github.svg" width="15" height="15" alt="">GitHub</a>
         </div>
         <div class="project-page-main">
-            <h2>Animi-Data</h2>
-            <p>This application enables users to look up information on anime, whether currently airing or already
-                released, using the Jikan API, which pulls data from the MyAnimeList website. It allows users to explore
-                the highest-rated and most popular anime, sort anime by genres, or search specific titles using
-                keywords. Additionally, users can filter results by media type to refine their searches further. Once an
-                anime is found, clicking on the anime card provides more detailed information, including a synopsis
-                and a trailer, making it easy to discover and learn more about any anime of interest.</p>
+            <h2>Media Transform</h2>
+            <p>Media Transform is an application that will have multiply features that allow users to manipulate media with a GUI. Right now it is a video editing application, that allows users to select a video that they want to change. This can be done by removing or changing streams on the video. once they are satisfied with their changes the video will be passed through FFMPEG and returned to the user in the selected location.  </p>
 
             <ul>
-                <li>React</li>
-                <li>JSX</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Zustand</li>
-                <li>TanStack Query</li>
+                <li>Node js</li>
+                <li>Express</li>
+                <li>FFMPEG</li>
+                <li>Docker</li>
+                <li>Docker-Compose</li>
+                <li>Javascript</li>
             </ul>
 
             <div class="divider">
@@ -105,37 +96,28 @@
 
         <div class="project-page-sub">
             <h3>Features</h3>
-            <p>Users can search for anime sorted by their ranking on my anime list website.</p>
-            <p>Users can search or anime based on genre or by search for the name of the anime.</p>
-            <p>Users can select an anime and learn more about it as well as watch the trailer from that anime.</p>
-
+            <p class="project-feature">Videos can be encoded to another format.</p>
+            <p class="project-feature">Users can remove or manipulate streams in video files.</p>
+            <p class="project-feature">Users can get information on video files.</p>
 
 
             <h3>Lessons Learned</h3>
-            <p>As this project is more of a re-creation project I have learnt better ways to display content and to make
-                it more visually pleasing. With more knowledge on react it allowed me to structure my code to be more
-                neater and easier to read.</p>
-            <p>I moved away from context api this time to try out something new for state management so I used Zustand.
-                Once I used it I seen the benefits of using it and am more willing to try out different state
-                managements in different projects.</p>
-            <p>I re-used TanStack Query in this project cause I liked the benefits it gives but I wasn't quiet sure how
-                it worked so I wanted to learn a bit more on how it works and this allowed me to experiment on why it
-                can do where I don't have to rely on useEffect to do all my fetching.</p>
-            <p>Working on this big projects lets me expand my CSS skills and IU learnt new concepts as well as try
-                things I haven't tried before like clip-path to create my tooltips on each card.</p>
+            <p class="project-lessons">Learned about how to handle moving large files from server to server in chunks.</p>
+            <p class="project-lessons">Have a better understanding on how video streams work.</p>
+            <p class="project-lessons">I learnt how to implement a queue system for my more heavy work load tasks.</p>
 
             <h3>Future features</h3>
-            <p>If I continue to improve this application I would like to add a feature to create accounts to track
-                different anime's and rank your top anime's. I would use firebase as the backend or if I feel up to
-                the task I could use mongodb to store the information.</p>
+            <p class="project-future">Convert videos into gif.</p>
+            <p class="project-future">Image transformation.</p>
+            <p class="project-future">video folder encoding automation.</p>
 
 
             <h3>Working On / Research</h3>
-            <p>Cleaning up UI</p>
-            <p>Fixing bugs</p>
+            <p class="project-research">Cleaning up UI.</p>
+            <p class="project-research">Diving deeper into how to get the most out of FFMPEG.</p>
 
             <h3>Deployment</h3>
-            <p id="l-p">This site is deployed to Render.</p>
+            <p class="project-deploy" id="l-p">Designed to be used Locally to help with media work.</p>
 
             <div class="divider">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -149,32 +131,25 @@
         <div class="project-page-other">
             <h3>Other Projects</h3>
             <ul class="project-page-other-projects">
-                <li><a href="bugtracking.html">1</a></li>
-                <li><a href="mediaupload.html">2</a></li>
-                <li><a href="gamerdata.html">3</a></li>
-                <li><a href="kanjistudy.html">4</a></li>
-                <li><a id="active-project" href="#">5</a></li>
-                <li><a href="csshelper.html">6</a></li>
+                <li><a href="mediaupload.html">1</a></li>
+                <li><a href="bugtracking.html">2</a></li>
+                <li><a id="active-project" href="#">3</a></li>
+                <li><a href="csshelper.html">4</a></li>
+                <li><a href="kanjistudy.html">5</a></li>
+                <li><a href="gamerdata.html">6</a></li>
             </ul>
         </div>
-
-
-
-
-
-
-
 
     </main>
     <footer>
         <div class="footer-projects">
-            <ul>
-                <li><a href="bugtracking.html">Bug Tracking App</a></li>
+            <ul>    
                 <li><a href="mediaupload.html">Media Upload</a></li>
-                <li><a href="gamerdata.html">Gamer-Data</a></li>
+                <li><a href="bugtracking.html">Bug Tracking App</a></li>
+                <li><a href="mediatransform.html">Media Transform</a></li>
+                <li><a href="csshelper.html">CSS Helper</a></li>
                 <li><a href="kanjistudy.html">Kanji Study</a></li>
-                <li><a href="animidata.html">Anime-Data</a></li>
-                <li><a href="csshelper.html">CSS-Helper</a></li>
+                <li><a href="gamerdata.html">Gamer-Data</a></li>
             </ul>
         </div>
         <div class="footer-name">

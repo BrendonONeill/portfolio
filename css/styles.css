@@ -838,6 +838,18 @@ footer {
 
 }
 
+.footer-projects ul li
+{
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    border: 2px solid var(--nav-colour);
+}
+
+.footer-projects ul li:hover
+{
+    border: 2px solid var(--text);
+}
+
 .footer-name {
     display: none;
 }
@@ -852,6 +864,18 @@ footer {
 .footer-links ul {
     list-style-type: none;
 }
+
+.footer-links ul a
+{
+    padding: 0.2rem 0.4rem;
+}
+
+.footer-links ul a:hover
+{
+    color: var(--hero-name);
+}
+
+
 
 footer a {
     text-decoration: none;
@@ -897,10 +921,10 @@ footer a img {
     background-size: cover;
 }
 
-.project-header-anime {
+.project-header-media {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-        url(../assets/images/webp/projects/anime-header.webp);
-    background-position: left center;
+        url(../assets/images/projects/pixel-lg.webp);
+    background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -1038,6 +1062,31 @@ footer a img {
 .project-page-sub p {
     padding-inline: 1rem;
     margin-bottom: 1.4rem;
+}
+
+.project-feature::before {
+    content: "⚙️ ";
+    padding: 0.2rem 0;
+}
+
+.project-lessons::before {
+    content: "📝 ";
+    padding: 0.2rem 0;
+}
+
+.project-future::before {
+    content: "📌 ";
+    padding: 0.2rem 0;
+}
+
+.project-research::before {
+    content: "🔍 ";
+    padding: 0.2rem 0;
+}
+
+.project-deploy::before {
+    content: "📦 ";
+    padding: 0.2rem 0;
 }
 
 #l-p {
@@ -1557,6 +1606,12 @@ footer a img {
         margin-bottom: 5rem;
     }
 
+    .design-button a
+    {
+        padding: 0.8rem 2rem;
+        font-size: 1.3rem;
+    }
+
     .design-img {
         flex-basis: 15%;
     }
@@ -1668,10 +1723,10 @@ footer a img {
 {
     .hero-button
     {
-        width: 16%;
+        width: 14%;
         top: 75%;
         transform: translate(-50%, -35%);
-        padding: 0.8rem 1.2rem;
+        padding: 0.8rem;
     }
     .about-img
     {
