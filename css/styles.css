@@ -548,8 +548,8 @@ section {
 
     grid-column: 1/6;
     grid-row: 1/6;
-    background-color: white;
-    padding: 0.2rem;
+    background-color: #efefef;
+    padding: 0.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -557,7 +557,7 @@ section {
 }
 
 .project-card-img-container img {
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .kanji-img {
@@ -897,18 +897,18 @@ footer a img {
     position: relative;
 }
 
-.project-header-bug {
+.project-header-rtshop {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-        url(../assets/images/webp/projects/bughead.webp);
-    background-position: left center;
+        url(../assets/images/projects/rtshop.webp);
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.project-header-gamer {
+.project-header-upload {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-        url(../assets/images/webp/projects/gamer2.webp);
-    background-position: left center;
+    url(../assets/images/projects/upload-bg.webp);
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -937,21 +937,14 @@ footer a img {
     background-size: cover;
 }
 
-.project-header-port {
+.project-header-hyu {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-        url(../assets/images/projects/upload-bg.webp);
+        url(../assets/images/projects/hyuheader.webp);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.project-header-ff7 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
-        url(../assets/images/projects/ff7cover.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .project-page-buttons {
     display: flex;
