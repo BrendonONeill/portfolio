@@ -57,7 +57,7 @@
         </div>
     </div>
     <div class="sidebar-bg display-bg"></div>
-    <header class="project-header project-header-gamer">
+    <header class="project-header project-header-rtshop">
 
         <div class="divider">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -69,41 +69,20 @@
     </header>
     <main>
         <div class="project-page-buttons">
-            <a href="https://github.com/BrendonONeill/Gamer-Data" target="_blank" class="project-page-github"><img
+            <a href="https://github.com/BrendonONeill/shopping-list/tree/db-added-main" target="_blank" class="project-page-github"><img
                     src="assets/images/media/github.svg" width="15" height="15" alt="">GitHub</a>
-            <a href="https://gamer-data.onrender.com/" target="_blank" class="project-page-live"><img
-                    src="assets/images/live.svg" width="15" height="15" alt="">Live
-                Preview</a>
         </div>
         <div class="project-page-main">
-            <h2>Gamer-Data</h2>
-            <div class="bug-tracking-info">
-                <p class="bt-p">Test account</p>
-                <p class="bt-p">Username: <span class="bt-b">fredb@gamer.ie</span> </p>
-                <p class="bt-p">Password: <span class="bt-b">t35t1ing1234</span> </p>
-            </div>
-
-            <p>
-                This application is a demo that allows users to search for information on video games by utilizing the
-                RAWG API,
-                providing access to a vast database of game details. In addition to browsing games, users can create
-                personalized collections of the games they own or have played.
-            </p>
-
-            <p>This project builds upon the concepts from two previous projects: the anime-data and bug tracking apps.
-                From the anime-data project, the focus
-                on API integration and displaying information on a website was applied, while from the bug tracking app,
-                the use of a database for storing and retrieving data was incorporated. By combining these concepts, the
-                app not only fetches game data from the API but also enables users to store and manage their game
-                collections within the system.</p>
-
+            <h2>Real Time Shopping List</h2>
+            <p>This is more of a personal project that I made a quick shopping list for my family and it kept growing to the point it is updated in real time. This project is a shopping list that updates in real time using socket.io, The form to input values has a filtering system that uses a custom Levenshtein Distance to handle misspellings by providing already added items and adds new inputs to the filter.</p>
             <ul>
-                <li>React</li>
-                <li>JSX</li>
-                <li>CSS3</li>
                 <li>JavaScript</li>
-                <li>Firebase</li>
-                <li>TanStack Query</li>
+                <li>Node js</li>
+                <li>Socket.io</li>
+                <li>Docker</li>
+                <li>Docker-Compose</li>
+                <li>PostgreSQL</li>
+                <li>Cron Jobs</li>
             </ul>
 
             <div class="divider">
@@ -117,33 +96,27 @@
 
         <div class="project-page-sub">
             <h3>Features</h3>
-            <p class="project-feature">Users can search for a game in a list of games that are sorted with rankings from the metacritic score.
-            </p>
-            <p class="project-feature">Users can search for games by genre or by using the search bar and type the name of the game.</p>
-            <p class="project-feature">Users can demo an account that allows users to select games to add to a list and they can rate games in
-                their own list</p>
+            <p class="project-feature">Real time updating</p>
+            <p class="project-feature">Filtering system</p>
+            <p class="project-feature">History of removal</p>
+            <p class="project-feature">Cron job to update Database</p>
+            <p class="project-feature">QR codes for discounts</p>
 
 
             <h3>Lessons Learned</h3>
-            <p class="project-lessons">How react renders and when information will be displayed on the page, I learnt a lot from this
-                project as I didn't fully understand how rendering worked.</p>
-            <p class="project-lessons">Using React with a backend (Firebase) and Api. This took a most of my time as trying to sort data
-                from one place to another and pick the best solutions to provide me the best answers.</p>
-            <p class="project-lessons"> Understanding how firebase stores information. I'm familiar with MongoDB and SQL databases but
-                firebase did it a bit different and I had to get my head around the new way to get data.</p>
-            <p class="project-lessons">Using useEffect less for API calls and instead using react query.</p>
+            <p class="project-lessons">Handling web sockets to update a database and other users</p>
+            <p class="project-lessons">Creating a filter system to help with spelling mistakes</p>
 
             <h3>Future features</h3>
-            <p class="project-future">See other users games collection if public to other users.</p>
-            <p class="project-future">Rate games in your collection how how satisfied you were with them.</p>
-            <p class="project-future">Set if the game is completed or not.</p>
+            <p class="project-future">To improve UI</p>
+            <p class="project-future">Add more ways to handle QR codes and discounts</p>
 
 
             <h3>Working On / Research</h3>
-            <p class="project-research">Add and improve accessibility on website.</p>
+            <p class="project-research">Fixing bugs</p>
 
             <h3>Deployment</h3>
-            <p class="project-deploy" id="l-p">Deployed on render with firebase as the database.</p>
+            <p class="project-deploy" id="l-p">This site is deployed to a VPS.</p>
 
             <div class="divider">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
@@ -158,31 +131,23 @@
             <h3>Other Projects</h3>
             <ul class="project-page-other-projects">
                 <li><a href="mediaupload.html">1</a></li>
-                <li><a href="bugtracking.html">2</a></li>
-                <li><a href="mediatransform.html">3</a></li>
+                <li><a href="mediatransform.html">2</a></li>
+                <li><a href="hyusync.html">3</a></li>
                 <li><a href="csshelper.html">4</a></li>
                 <li><a href="kanjistudy.html">5</a></li>
                 <li><a id="active-project" href="#">6</a></li>
             </ul>
         </div>
-
-
-
-
-
-
-
-
     </main>
     <footer>
         <div class="footer-projects">
             <ul>    
                 <li><a href="mediaupload.html">Media Upload</a></li>
-                <li><a href="bugtracking.html">Bug Tracking App</a></li>
                 <li><a href="mediatransform.html">Media Transform</a></li>
+                <li><a href="hyusync.html">Hyu-Sync</a></li>
                 <li><a href="csshelper.html">CSS Helper</a></li>
                 <li><a href="kanjistudy.html">Kanji Study</a></li>
-                <li><a href="gamerdata.html">Gamer-Data</a></li>
+                <li><a href="rtshoppinglist.html">Real Time Shopping List</a></li>
             </ul>
         </div>
         <div class="footer-name">
